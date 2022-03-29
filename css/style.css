@@ -43,4 +43,8 @@ body {
     background: black;
     position: absolute;
     top: 50%;
+    transform-origin: 100%; /* esto es para que el rotate empiece en el extremo y no en el centro */
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 6, 0.58, 1); /* esto sirve para darle el efecto de rebote a las agujas del reloj */
 }
